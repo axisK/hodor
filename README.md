@@ -11,3 +11,12 @@ HODOR (to brainfuck, and back!)
 | ```,```   | accept one byte of input, storing its value in the byte at the data pointer. |  ```HodoR``` |
 | ```[```   | if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ```]``` command. | ```hodor``` |
 | ```]```   | if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command. | ```HODOR``` |
+
+Example
+=======
+
+```
+$ beef <(./hodor2bf.sh HODOR.hodor)
+HODOR
+
+```
